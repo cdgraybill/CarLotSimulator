@@ -19,13 +19,15 @@ namespace CarLotSimulator
             Console.ReadLine();
 
 
-            var chevy = new Car();
-            chevy.Year = "2015";
-            chevy.Make = "Chevy";
-            chevy.Model = "Malibu";
-            chevy.EngineNoise = "vroom";
-            chevy.HonkNoise = "honk";
-            chevy.IsDriveable = true;
+            Car chevy = new Car()
+            {
+                Year = "2015",
+                Make = "Chevy",
+                Model = "Malibu",
+                EngineNoise = "vroom",
+                HonkNoise = "honk",
+                IsDriveable = true
+            };
 
             chevy.MakeEngineNoise(chevy.EngineNoise);
             chevy.MakeHonkNoise(chevy.HonkNoise);
