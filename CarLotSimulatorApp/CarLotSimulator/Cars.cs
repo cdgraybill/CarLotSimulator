@@ -13,6 +13,21 @@ namespace CarLotSimulator
         public string HonkNoise { get; set; }
         public bool IsDriveable { get; set; }
 
+        public Car()
+        {
+            //Default Constructor
+        }
+
+        public Car(string year, string make, string model, string engineNoise, string honkNoise, bool isDriveable)
+        {
+            Year = year;
+            Make = make;
+            Model = model;
+            EngineNoise = engineNoise;
+            HonkNoise = honkNoise;
+            IsDriveable = isDriveable;
+        }
+
         public void MakeEngineNoise(string engineNoise)
         {
             Console.WriteLine(engineNoise);

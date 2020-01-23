@@ -34,13 +34,20 @@ namespace CarLotSimulator
             Console.ReadLine();
 
 
-            var honda = new Car();
-            honda.Year = "2015";
-            honda.Make = "Honda";
-            honda.Model = "Accord";
-            honda.EngineNoise = "vroom";
-            honda.HonkNoise = "honk";
-            honda.IsDriveable = true;
+            //var honda = new Car();
+            //honda.Year = "2015";
+            //honda.Make = "Honda";
+            //honda.Model = "Accord";
+            //honda.EngineNoise = "vroom";
+            //honda.HonkNoise = "honk";
+            //honda.IsDriveable = true;
+
+            //honda.MakeEngineNoise(honda.EngineNoise);
+            //honda.MakeHonkNoise(honda.HonkNoise);
+            //Console.ReadLine();
+
+
+            Car honda = new Car("2015", "Honda", "Accord", "vroom", "honk", true);
 
             honda.MakeEngineNoise(honda.EngineNoise);
             honda.MakeHonkNoise(honda.HonkNoise);
